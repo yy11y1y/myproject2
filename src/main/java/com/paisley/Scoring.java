@@ -2,12 +2,11 @@ package com.paisley;
 
 public class Scoring {
     public static void main(String[] args) {
-        Student jack = new Student("jack");
-        jack.name = "Jack";
-        jack.english = 85;
-        jack.math = 98;
-        Student hank = new Student("hank" );
+        Student jack = new Student("jack",78,62);
+        Student hank = new Student("hank",60,32);
+        GraduateStudent jane = new GraduateStudent("jane",65,83,79);
         jack.print();
         hank.print();
+        jane.print();
     }
 }
