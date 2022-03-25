@@ -1,4 +1,4 @@
-package com.paisley;
+package com.paisley.score;
 
 public class Student {
     String name;
@@ -15,14 +15,14 @@ public class Student {
     public Student(){
         this("John Doe" , -1 ,-1);
     }
+    public int getAverage(){
+        return (english + math)/2;
+    }
     public void print (){
         System.out.print(name + "\t" + english + "\t" + math + "\t" + getAverage());
         if (getAverage() < 60){
             System.out.println("*");
         }
         System.out.println();
-    }
-    public int getAverage(){
-        return (english + math)/2;
     }
 }

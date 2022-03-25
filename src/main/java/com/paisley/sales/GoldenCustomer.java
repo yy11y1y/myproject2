@@ -1,4 +1,4 @@
-package com.paisley;
+package com.paisley.sales;
 
 public class GoldenCustomer extends customer{
     public GoldenCustomer(String id , int amount){

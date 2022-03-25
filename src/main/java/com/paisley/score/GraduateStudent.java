@@ -1,6 +1,4 @@
-package com.paisley;
-
-import javax.swing.*;
+package com.paisley.score;
 
 public class GraduateStudent extends Student{
     int thesis;

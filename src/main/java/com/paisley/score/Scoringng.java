@@ -1,4 +1,4 @@
-package com.paisley;
+package com.paisley.score;
 
 public class Scoringng {
     public static void main(String[] args) {
