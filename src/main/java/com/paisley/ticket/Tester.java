@@ -1,7 +1,5 @@
 package com.paisley.ticket;
 
-import com.paisley.score.Student;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -56,7 +54,7 @@ public class Tester {
                     list.add(studentTicket);
                     break;
                 case 3:
-                    GrandTicket grandTicket = new GrandTicket(startStation , endStation , n);
+                    OldTicket grandTicket = new OldTicket(startStation , endStation , n);
                     list.add(grandTicket);
                     break;
                 case 4:
