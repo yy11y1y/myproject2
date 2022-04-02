@@ -8,11 +8,11 @@ public class customer {
         this.id = id;
         this.amount = amount;
     }
-    public float getOffMoney() {
+    public float backMoney() {
         return (amount/1000)*off*1000;
     }
     public void print(){
-        float money = amount-getOffMoney();
+        float money = amount-backMoney();
         System.out.println(id + "\t" + amount + "\t" + money);
     }
 }
