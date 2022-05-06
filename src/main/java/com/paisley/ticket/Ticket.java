@@ -1,30 +1,55 @@
 package com.paisley.ticket;
 
-public class Ticket {
-    public static final int TAIPEI_CITY = 100;
+public abstract class Ticket {
+    /*public static final int TAIPEI_CITY = 100;
     public static int TAICHUNG_CITY = 200;
-    public static int KAOHSIUNG_CITY = 300;
+    public static int KAOHSIUNG_CITY = 300;*/
 
+    int price;
     int amount;
     Station start;
     Station destination;
+
     public Ticket(Station start,Station destination,int amount){
         this.start = start;
         this.destination = destination;
-        this.amount = amount;
-    }
-    public float price(){
-        int distance = destination.id - start.id;
-        if(destination.id == 200 && start.id == 100 || start.id == 200  && destination.id == 100){
-            return 600;
-        }else if(destination.id == 300 && start.id == 200 || start.id == 300  && destination.id == 200){
-            return 900;
-        }else if (distance == 200 || distance == -200){
-            return 1500;
+        int diff = Math.abs(start.id - destination.id);
+        System.out.println("diff:" + diff);
+        switch (diff) {
+            case 100:
+                price = 500;
+                break;
+            case 200:
+                price = 600;
+                break;
+            case 300:
+                price = 1100;
+                break;
         }
-        return 0;
     }
+
+    public abstract float price();
+
+    /*if (start == Station.TAIPEI_CITY) {
+                if (destination ==  Station.TAICHUNG) {
+                    price = 500;
+                } else {
+                    price = 1100;
+                }
+            } else if (start == Station.TAICHUNG) {
+                if (destination == Station.KAOHSIUNG) {
+                    price = 600;
+                } else {
+                    price = 500;
+                }
+            } else if (start == Station.KAOHSIUNG) {
+                if (destination == Station.TAIPEI_CITY) {
+                    price = 110;
+                } else {
+                    price = 600;
+                }
+            }*/
     public void print(){
-        System.out.println("normal ticket"+"\t"+start.name+"to"+destination.name+"\t"+amount+"\t"+price()*amount);
+        //
     }
 }

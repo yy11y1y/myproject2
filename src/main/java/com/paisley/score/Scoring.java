@@ -1,5 +1,8 @@
 package com.paisley.score;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Scoring {
     public static void main(String[] args) {
         Student jack = new Student("jack",78,62);
@@ -8,5 +11,6 @@ public class Scoring {
         jack.print();
         hank.print();
         jane.print();
+
     }
 }

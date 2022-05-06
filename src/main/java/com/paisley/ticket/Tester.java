@@ -2,6 +2,14 @@ package com.paisley.ticket;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+/*
+台北     台中     高雄
+100     200     300
+    500     600
+ <===============>
+        1100
+ */
+
 
 public class Tester {
     public static void main(String[] args) {
@@ -40,11 +48,11 @@ public class Tester {
                     endStation = Station.KAOHSIUNG;
                     break;
             }
-            System.out.println("choose type(1: normal ,2: student,3: old,4: return)");
-            int type = Integer.parseInt(scanner.next());
+            //System.out.println("choose type(1: normal ,2: student,3: old,4: return)");
+            //int type = Integer.parseInt(scanner.next());
             System.out.println("how many:");
             int n = Integer.parseInt(scanner.next());
-            switch (type){
+            /*switch (type){
                 case 1:
                     Ticket ticket = new Ticket(startStation , endStation ,n);
                     list.add(ticket);
@@ -61,6 +69,8 @@ public class Tester {
                     ReturnTicket returnTicket = new ReturnTicket(startStation , endStation , n);
                     list.add(returnTicket);
             }
+
+             */
         }
         for(Ticket t : list){
             t.print();

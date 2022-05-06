@@ -6,7 +6,15 @@ public class GraduateStudent extends Student{
         super(name , english , math);
         this.thesis = thesis;
     }
+    public GraduateStudent(String name) {
+        super(name);
+    }
+
+    @Override
     public void print(){
-        System.out.println(name + "\t" + english + "\t" + math + "" + "\t" + getAverage() + "\t" + thesis);
+        System.out.println(name + "\t"+english+"\t" +math + "\t" +getAverage() + "\t" + thesis);
+    }
+    public void test(){
+
     }
 }
