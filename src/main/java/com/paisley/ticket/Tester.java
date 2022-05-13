@@ -2,14 +2,6 @@ package com.paisley.ticket;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-/*
-台北     台中     高雄
-100     200     300
-    500     600
- <===============>
-        1100
- */
-
 
 public class Tester {
     public static void main(String[] args) {

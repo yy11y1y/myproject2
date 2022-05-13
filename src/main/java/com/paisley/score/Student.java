@@ -1,6 +1,5 @@
 package com.paisley.score;
 
-//修飾子 Modifier  public/defoult(package)/private/protected
 public class Student implements Printable {
     protected String name;
     protected int english;
