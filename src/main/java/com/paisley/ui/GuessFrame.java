@@ -21,6 +21,7 @@ public class GuessFrame extends JFrame {
                 label.setText("hello");
             }
         });
+
         setLayout(new FlowLayout());
         add(button);
         add(label);
